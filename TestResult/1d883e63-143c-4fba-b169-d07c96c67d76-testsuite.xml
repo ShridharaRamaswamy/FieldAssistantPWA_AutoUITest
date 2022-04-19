@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1636620995114' stop='1636621016249'>
+    <name>PWA Login Module test cases - </name>
+    <title>PWA Login Module test cases - </title>
+    <test-cases>
+        <test-case start='1636620995115' status='passed' stop='1636621012591'>
+            <name>Login Success</name>
+            <title>Login Success</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1636621012592' status='passed' stop='1636621016246'>
+            <name>Invalid username and password</name>
+            <title>Invalid username and password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
