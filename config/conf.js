@@ -44,12 +44,12 @@ exports.config = {
     testsuite: [
       '../tests/registerClient/register.js',
       '../tests/login/login.js',
-      // '../tests/sync/sync.js',
-      // '../tests/route/route.js',
-      // '../tests/device/device.js',
-      // '../tests/workProcedure/workProcedure.js',
-      // '../tests/log/log.js',
-      // '../tests/logout/logout.js'
+      '../tests/sync/sync.js',
+      '../tests/route/route.js',
+      '../tests/device/device.js',
+      '../tests/workProcedure/workProcedure.js',
+      '../tests/log/log.js',
+      '../tests/logout/logout.js'
     ]
   },
 
