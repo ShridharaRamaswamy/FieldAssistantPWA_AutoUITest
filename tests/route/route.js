@@ -58,7 +58,8 @@ describe("PWA, Route Module test cases", () => {
 
     expect(routePageDevicePendingCount).toEqual('8');
 
-  }), it("Download, Upload from Route Level using more vert icon", async () => {
+  }),
+  it("Download, Upload from Route Level using more vert icon", async () => {
 
     console.log("Inside Second it block");
 

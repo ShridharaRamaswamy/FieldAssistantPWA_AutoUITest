@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="15.862">
- <testsuite name="PWA delete Register Client test cases" timestamp="2022-04-20T12:46:27" hostname="localhost" time="15.862" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA delete Register Client test cases" name="Delete registered client" time="15.856" />
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="81.076">
+ <testsuite name="PWA, Route Module test cases" timestamp="2022-04-20T13:01:37" hostname="localhost" time="81.076" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="PWA, Route Module test cases" name="Initial Download, Check Device Pending Count" time="81.071" />
  </testsuite>
 </testsuites>
