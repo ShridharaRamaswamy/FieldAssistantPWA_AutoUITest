@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="2" time="288.688">
- <testsuite name="PWA, Device Module test cases" timestamp="2022-04-08T15:56:39" hostname="localhost" time="288.688" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA, Device Module test cases" name="Do not Mark done at device level and check mark done is enabled at work procedure level" time="102.77" />
-  <testcase classname="PWA, Device Module test cases" name="Download, mark done and discard at device level and Upload from Device Level and check device count" time="185.912" />
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="15.862">
+ <testsuite name="PWA delete Register Client test cases" timestamp="2022-04-20T12:46:27" hostname="localhost" time="15.862" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="PWA delete Register Client test cases" name="Delete registered client" time="15.856" />
  </testsuite>
 </testsuites>

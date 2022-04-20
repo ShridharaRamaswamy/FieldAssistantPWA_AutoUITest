@@ -42,6 +42,7 @@ exports.config = {
   suites:
   {
     testsuite: [
+      'C:/Users/Administrator/Documents/FieldAssistantPWA_AutoUITest/tests/deleteregisterclient/deleteregisterclient.js',
       '../tests/registerClient/register.js',
       '../tests/login/login.js',
       '../tests/sync/sync.js',
