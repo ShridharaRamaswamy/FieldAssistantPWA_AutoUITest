@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="1" time="81.076">
- <testsuite name="PWA, Route Module test cases" timestamp="2022-04-20T13:01:37" hostname="localhost" time="81.076" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA, Route Module test cases" name="Initial Download, Check Device Pending Count" time="81.071" />
+<testsuites disabled="0" errors="0" failures="2" tests="3" time="37.74">
+ <testsuite name="PWA Register Client test cases" timestamp="2022-04-22T11:47:19" hostname="localhost" time="37.74" errors="0" tests="3" skipped="0" disabled="0" failures="2">
+  <testcase classname="PWA Register Client test cases" name="Valid Client Name Registration" time="17.743">
+   <failure type="exception" message="Failed: Wait timed out after 15010ms"><![CDATA[TimeoutError: Wait timed out after 15010ms
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:22:6)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+  </testcase>
+  <testcase classname="PWA Register Client test cases" name="Invalid Client Name Registration" time="2.237" />
+  <testcase classname="PWA Register Client test cases" name="Already Exists Client Name Registration &amp; Rename and register" time="17.74">
+   <failure type="exception" message="Failed: Wait timed out after 15002ms"><![CDATA[TimeoutError: Wait timed out after 15002ms
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:48:7)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>

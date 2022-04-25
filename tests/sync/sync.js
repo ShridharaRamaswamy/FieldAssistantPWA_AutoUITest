@@ -59,7 +59,7 @@ describe("PWA Sync module test cases", () => {
 
       await syncRoutePage.checkRoutesDuringInitialGetRoutes();
 
-   }),
+   })
 
       it("Get routes and clear shfit, then sync", async () => {
 
