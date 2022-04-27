@@ -1,5 +1,6 @@
 let syncRoutePage = function () {
-    let shiftLocator = element(by.css("mat-select[formcontrolname='selectedShifts'] .mat-select-placeholder"));
+    // let shiftLocator = element(by.css("mat-select[formcontrolname='selectedShifts'] .mat-select-placeholder"));
+    let shiftLocator = element(by.xpath("//div[@class='mat-select-arrow ng-tns-c66-12']")); //added by sagar
    // let downloadingDialogLocator = element(by.xpath("//span[.='Downloading Teams and Work Centers.']"));
     let removeShiftLocator = element(by.css("mat-select[formcontrolname='selectedShifts'] .mat-select-value"));
     let downloadingEquipments = element(by.xpath("//span[.='Downloading equipments']"));
