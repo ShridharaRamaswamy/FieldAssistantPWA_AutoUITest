@@ -18,7 +18,8 @@
     "protractor-jasmine2-screenshot-reporter": "^0.5.0"
   },
   "scripts": {
-    "test": "protractor config/conf.js --suite testsuite"
+    "test": "protractor config/conf.js --suite testsuite",
+    "update": "webdriver-manager update"
   },
   "repository": {
     "type": "git",
