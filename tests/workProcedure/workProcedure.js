@@ -258,7 +258,8 @@ describe("PWA, Wrok Procedure Module test cases", () => {
 
       expect(browser.getCurrentUrl()).toEqual(currentUrl);
 
-    }), it("Open Work Procedure Log, close and Save", async () => {
+    }), 
+    it("Open Work Procedure Log, close and Save", async () => {
 
       console.log("Inside 12th it block");
 
@@ -271,7 +272,7 @@ describe("PWA, Wrok Procedure Module test cases", () => {
       await workProcedurePage.saveLogPopUp();
 
 
-    }), 
+    })
 
    it("Open Work Procedure Log, select log template and Save", async () => {
 

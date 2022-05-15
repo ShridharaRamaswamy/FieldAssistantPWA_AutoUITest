@@ -132,7 +132,7 @@ describe("PWA, Device Module test cases", () => {
 
          await devicePage.markDoneAtDeviceLevel();
 
-         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 15000);
+         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 20000);
 
          var currentCount = await devicePage.devicePageWorkProcedurePedningCount();
          expect(currentCount).toBe('0');
@@ -150,7 +150,7 @@ describe("PWA, Device Module test cases", () => {
 
          await devicePage.markDoneAtDeviceLevel();
 
-         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 15000);
+         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 20000);
 
          var currentCount = await devicePage.devicePageWorkProcedurePedningCount();
          expect(currentCount).toBe('0');
@@ -161,7 +161,7 @@ describe("PWA, Device Module test cases", () => {
 
          expect(discardLocator.isEnabled()).toBe(true);
 
-      }), 
+      })
    it("Do not Mark done at device level and check mark done is enabled at work procedure level", async () => {
 
          console.log("Inside Seventh it block");
@@ -178,7 +178,7 @@ describe("PWA, Device Module test cases", () => {
 
          await devicePage.markDoneAtDeviceLevel();
 
-         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 15000);
+         await browser.wait(EC.visibilityOf(element(by.xpath("//span[.='Pending 0']"))), 20000);
 
          await devicePage.discardAtDeviceLevel();
 
