@@ -24,7 +24,7 @@ let devicePage = function () {
     }
 
     this.devicePageWorkProcedurePedningCount = async function () {
-        await browser.wait(EC.visibilityOf(devicePageWorkProcedurePendingCountLocator), 15000);
+        await browser.wait(EC.visibilityOf(devicePageWorkProcedurePendingCountLocator), 20000);
         return devicePagePendingCountValue = await devicePageWorkProcedurePendingCountLocator.getText();
 
     }

@@ -140,25 +140,25 @@ let logPage = function () {
     }
 
     this.areaEntitySelection = async function () {
-        await browser.wait(EC.visibilityOf(areaEntityLocator), 15000);
+        await browser.wait(EC.visibilityOf(areaEntityLocator), 20000);
         await areaEntityLocator.click();
 
     }
 
     this.workCenterEntitySelection = async function () {
-        await browser.wait(EC.visibilityOf(workCeneterEntityLocator), 15000);
+        await browser.wait(EC.visibilityOf(workCeneterEntityLocator), 20000);
         await workCeneterEntityLocator.click();
 
     }
 
     this.workUnitEntitySelection = async function () {
-        await browser.wait(EC.visibilityOf(workUnitEntityLocator), 15000);
+        await browser.wait(EC.visibilityOf(workUnitEntityLocator), 20000);
         await workUnitEntityLocator.click();
 
     }
 
     this.routeEntitySelection = async function () {
-        await browser.wait(EC.visibilityOf(routeEntityLocator), 15000);
+        await browser.wait(EC.visibilityOf(routeEntityLocator), 20000);
         await routeEntityLocator.click();
 
     }

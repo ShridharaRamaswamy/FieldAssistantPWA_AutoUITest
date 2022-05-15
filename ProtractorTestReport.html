@@ -189,10 +189,10 @@ th {
         <div class="navbar-header">
           <div class="project-name visible-md visible-lg">Protractor Test Execution Report</div>
           <div class="label-container">
-            <span class="label label-success" title=TestCases>Passed: 3</span>
-            
+            <span class="label label-success" title=TestCases>Passed: 1</span>
+            <span class="label label-danger" title=TestCases>Failed: 1</span> 
 			
-            <span class="label label-info">Time Elapsed: 0h 0min 8s</span>
+            <span class="label label-info">Time Elapsed: 0h 2min 17s</span>
           </div>
         </div>
       </div>
@@ -200,11 +200,11 @@ th {
 
     <div class="container">
 	
-    <div class="generated-on">5/15/2022, 6:04:01 PM</div>
+    <div class="generated-on">5/15/2022, 8:11:30 PM</div>
 	
     <!--<div class="generated-on"><b>Platform:</b> Windows</div>
     <div class="info"><b>Browser:</b> chrome 101.0.4951.54</div>
-    <div class="info"><b>Generated on:</b> 5/15/2022, 6:04:01 PM</div>-->
+    <div class="info"><b>Generated on:</b> 5/15/2022, 8:11:30 PM</div>-->
 
 
       <div class="row">
@@ -246,12 +246,13 @@ th {
       <h4 class="panel-title">
           <a data-toggle="collapse" href="#collapseSuite0">
           
-            <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
           
-          <font color="green"><b>TestSuite:</b>PWA Register Client test cases</font>
+          <font color="red"><b>TestSuite:</b>PWA Sync module test cases</font>
+          
           <span class="label-container">
-            <span class="label label-success">3</span>
-            
+            <span class="label label-success">1</span>
+            <span class="label label-danger">1</span>
             
             
           </span>
@@ -269,7 +270,7 @@ th {
                           <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>Valid Client Name Registration</font>
+                        <font color="green"><b>TestCase:</b>Adoc Sync Team Selection check</font>
                         
                         
                         <span class="label-container">
@@ -285,7 +286,7 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 4 seconds</font>
+                          <font color="black">Time elapsed: 96 seconds</font>
 
                           
 
@@ -302,16 +303,16 @@ th {
                     <h4 class="panel-title">
                       <a data-toggle="collapse" href="#collapseTestCase0_1">
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
+                          <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
                         
 
-                        <font color="green"><b>TestCase:</b>Invalid Client Name Registration</font>
                         
                         
+                        <font color="red"><b>TestCase:</b>Device select in route card, sync particular route</font>
                         <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
                           
                           
+                          <span class="label label-danger" title="Failed">Failed</span>
                       </a>
                     </h4>
                   </div>
@@ -321,47 +322,22 @@ th {
                       <p class="scenario-container">
                         
                           <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 3 seconds</font>
+                          <font color="black">Time elapsed: 41 seconds</font>
 
+                          
+                            <br />
+                            <span class="label label-danger"><i class="glyphicon glyphicon-remove"></i></span>
+                            <font color="red">Expected 5 to equal 8.</font>
                           
 
                           
-                      
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-              
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" href="#collapseTestCase0_2">
+                            <br />
+                            <span class="label label-primary"><i class="glyphicon glyphicon-camera"></i></span>
+                              Screenshot on failure:
+                            <a class="screenshot" href="./screenshots/chrome-PWA Sync module test cases Device select in route card, sync particular route.png" data-lightbox="chrome-PWA Sync module test cases Device select in route card, sync particular route.png">
+                              <img src="./screenshots/chrome-PWA Sync module test cases Device select in route card, sync particular route.png" style="width:100%;height:100%" alt="Screenshot not found: ./screenshots/chrome-PWA Sync module test cases Device select in route card, sync particular route.png"/>
+                            </a>
                         
-                          <span class="label label-success"><i class="glyphicon glyphicon-ok"></i></span>
-                        
-
-                        <font color="green"><b>TestCase:</b>Already Exists Client Name Registration & Rename and register</font>
-                        
-                        
-                        <span class="label-container">
-                          <span class="label label-success" title="Passed">Passed</span>
-                          
-                          
-                      </a>
-                    </h4>
-                  </div>
-
-                  <div id="collapseTestCase0_2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      <p class="scenario-container">
-                        
-                          <span class="label label-primary" title="Success"><i class="glyphicon glyphicon-time"></i></span>
-                          <font color="black">Time elapsed: 3 seconds</font>
-
-                          
-
-                          
                       
                       </p>
                     </div>
@@ -403,16 +379,16 @@ th {
       google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestSuites",
-                                                              "passed": 1,
-                                                              "failed": 0,
+                                                              "passed": 0,
+                                                              "failed": 1,
         })
       });
       google.charts.setOnLoadCallback(function() {drawChart({
                                                               "title": "TestCases",
-                                                              "passed": 3,
+                                                              "passed": 1,
                                                               "skipped": 0,
                                                               "errors": 0,
-                                                              "failed": 0
+                                                              "failed": 1
         })
       });
 

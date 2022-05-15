@@ -244,7 +244,8 @@ it("Device select in route card, sync particular route", async () => {
         expect(check).toEqual(8)
 
 
-      }),it("Device select in route card, select some equipment , cancel", async () => {
+      })
+      it("Device select in route card, select some equipment , cancel", async () => {
 
          console.log("Inside Seven it block");
 

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="3" time="7.985">
- <testsuite name="PWA Register Client test cases" timestamp="2022-05-15T18:03:53" hostname="localhost" time="7.985" errors="0" tests="3" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA Register Client test cases" name="Valid Client Name Registration" time="3.326" />
-  <testcase classname="PWA Register Client test cases" name="Invalid Client Name Registration" time="2.229" />
-  <testcase classname="PWA Register Client test cases" name="Already Exists Client Name Registration &amp; Rename and register" time="2.424" />
+<testsuites disabled="0" errors="0" failures="1" tests="2" time="136.987">
+ <testsuite name="PWA Sync module test cases" timestamp="2022-05-15T20:09:12" hostname="localhost" time="136.987" errors="0" tests="2" skipped="0" disabled="0" failures="1">
+  <testcase classname="PWA Sync module test cases" name="Adoc Sync Team Selection check" time="95.983" />
+  <testcase classname="PWA Sync module test cases" name="Device select in route card, sync particular route" time="40.993">
+   <failure type="toEqual" message="Expected 5 to equal 8."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\sync\sync.js:244:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>
