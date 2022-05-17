@@ -8,7 +8,7 @@ var reporter = new HtmlScreenshotReporter({
 
 exports.config = {
   directConnect: true,
-  allScriptsTimeout: 800000,
+  allScriptsTimeout: 900000,
   getPageTimeout: 120000,
 
   // Capabilities to be passed to the webdriver instance.

@@ -15,7 +15,7 @@ let loginPage = function () {
          username.sendKeys(userNameVar);
        
          password.sendKeys(passwordVar);
-         
+         await browser.sleep(2000);
         await loginButton.click();
       
     };
