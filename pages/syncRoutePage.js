@@ -52,9 +52,9 @@ let syncRoutePage = function () {
         await browser.wait(EC.elementToBeClickable(menuLocator), 150000); //changed by sagar
 
         await browser.wait(EC.invisibilityOf(downloadingEquipments),360000);
-        await browser.wait(2000);
-        await browser.wait(EC.visibilityOf(shiftLocator), 600000);
-        
+
+        await browser.sleep(2000);
+        await browser.wait(EC.visibilityOf(shiftLocator), 600000);  
         await shiftLocator.click();
 
         await browser.wait(EC.visibilityOf(selectedShift), 120000);
