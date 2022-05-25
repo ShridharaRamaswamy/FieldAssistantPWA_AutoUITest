@@ -45,6 +45,7 @@ let routePage = function () {
     }
 
     this.uploadDataAtRouteLevel = async function () {
+        await browser.sleep(2000); //added by sagar
         await browser.wait(EC.visibilityOf(routeUploadLocator), 30000);
         await routeUploadLocator.click();
     }
