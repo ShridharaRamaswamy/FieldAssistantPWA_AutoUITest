@@ -181,34 +181,34 @@ describe("PWA, Wrok Procedure Module test cases", () => {
 
     }),
 
-    it("Download and mark done at work procedure level and Upload from Device Level and Logout", async () => {
+    // it("Download and mark done at work procedure level and Upload from Device Level and Logout", async () => {
 
-      console.log("Inside Seven it block");
+    //   console.log("Inside Seven it block");
 
-      await workProcedurePage.selectMenuAtWorkProcedureLevel();
+    //   await workProcedurePage.selectMenuAtWorkProcedureLevel();
 
-      await workProcedurePage.markDoneAtWorkProcedure();
+    //   await workProcedurePage.markDoneAtWorkProcedure();
 
-      await common.goBack();
+    //   await common.goBack();
 
-      await common.selectMenu();
+    //   await common.selectMenu();
 
-      await routePage.myRoute();
+    //   await routePage.myRoute();
 
-      await routePage.uploadDataAtRouteLevel();
+    //   await routePage.uploadDataAtRouteLevel();
 
-      await routePage.confirmUploadDataAtRouteLevel();
+    //   await routePage.confirmUploadDataAtRouteLevel();
 
-      await routePage.downloadRoute();
+    //   await routePage.downloadRoute();
 
-      await common.selectMenu();
+    //   await common.selectMenu();
 
-      await logoutPage.logout();
+    //   await logoutPage.logout();
 
      // await logoutPage.confirmLogout();
 
 
-    }),
+    // }),
      it("Open work procedure and trend from work item", async () => {
 
       console.log("Inside Eight it block");
