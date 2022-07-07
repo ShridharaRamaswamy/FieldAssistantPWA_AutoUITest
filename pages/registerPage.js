@@ -7,7 +7,7 @@ let workProcedurePage = function () {
     let validMessage = element(by.xpath("//p[.='This client is successfully registered.']"));
     let okLocator = element(by.xpath("//span[.='OK']"));
     let existMessage =  element(by.xpath("//p[1]"));
-    let renameLocator = element(by.xpath("//span[.='RENAME']")) ;
+    let renameLocator = element(by.xpath("//span[.='CANCEL']")) ;
     var EC = protractor.ExpectedConditions;
 
     this.registerClient = async function (name,pin) {
