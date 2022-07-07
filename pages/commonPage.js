@@ -7,6 +7,7 @@ let commonPage = function () {
         await browser.executeScript('window.localStorage.clear();');
         await browser.executeScript('window.sessionStorage.clear();');
         await browser.driver.manage().deleteAllCookies();
+        // browser.restart()
         await browser.executeScript('window.indexedDB.databases().then((r) => {for(var i = 0; i < r.length; i++) window.indexedDB.deleteDatabase(r[i].name);});')
         console.log("Called")
     }

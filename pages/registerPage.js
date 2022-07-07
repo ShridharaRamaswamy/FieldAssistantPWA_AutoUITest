@@ -1,6 +1,5 @@
 let workProcedurePage = function () {
 
-    
     let clientNameLocator = element(by.id('mat-input-0'));
     let pinLocator = element(by.id('mat-input-1'));
     let registerLocator = element(by.css('.mat-button-wrapper'));
@@ -19,7 +18,10 @@ let workProcedurePage = function () {
 
         await clientNameLocator.sendKeys(name);
 
+        await browser.wait(EC.visibilityOf(pinLocator), 8000);
+
         await pinLocator.click();
+
         await pinLocator.sendKeys(pin);
 
         await registerLocator.click();

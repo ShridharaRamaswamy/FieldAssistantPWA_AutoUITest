@@ -1,15 +1,135 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="6" time="34.539">
- <testsuite name="PWA delete Register Client test cases" timestamp="2022-05-17T10:04:52" hostname="localhost" time="15.564" errors="0" tests="1" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA delete Register Client test cases" name="Delete registered client" time="15.558" />
- </testsuite>
- <testsuite name="PWA Register Client test cases" timestamp="2022-05-17T10:05:08" hostname="localhost" time="9.098" errors="0" tests="3" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA Register Client test cases" name="Valid Client Name Registration" time="4.122" />
-  <testcase classname="PWA Register Client test cases" name="Invalid Client Name Registration" time="2.278" />
-  <testcase classname="PWA Register Client test cases" name="Already Exists Client Name Registration &amp; Rename and register" time="2.693" />
- </testsuite>
- <testsuite name="PWA Login Module test cases - " timestamp="2022-05-17T10:05:17" hostname="localhost" time="9.877" errors="0" tests="2" skipped="0" disabled="0" failures="0">
-  <testcase classname="PWA Login Module test cases - " name="Login Success" time="5.506" />
-  <testcase classname="PWA Login Module test cases - " name="Invalid username and password" time="4.369" />
+<testsuites disabled="0" errors="0" failures="5" tests="3" time="19.96">
+ <testsuite name="PWA Register Client test cases" timestamp="2022-07-07T15:01:30" hostname="localhost" time="19.96" errors="0" tests="3" skipped="0" disabled="0" failures="5">
+  <testcase classname="PWA Register Client test cases" name="Valid Client Name Registration" time="5.381" />
+  <testcase classname="PWA Register Client test cases" name="Invalid Client Name Registration" time="14.503">
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:37:7)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+    at commonPage.clear (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\pages\commonPage.js:7:9)
+    at UserContext.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:24:9)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:23:7)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+  </testcase>
+  <testcase classname="PWA Register Client test cases" name="Already Exists Client Name Registration &amp; Rename and register" time="0.068">
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+    at UserContext.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:19:9)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:17:3)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:47:7)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+   <failure type="exception" message="Failed: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)"><![CDATA[NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+  (Driver info: chromedriver=103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}),platform=Windows NT 10.0.14393 x86_64)
+    at Object.checkLegacyResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+    at parseHttpResponse (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+    at commonPage.clear (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\pages\commonPage.js:7:9)
+    at UserContext.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:24:9)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:23:7)
+    at addSpecsToSuite (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Users\Administrator\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Users\Administrator\Documents\FieldAssistantPWA_AutoUITest\tests\registerClient\register.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)]]>
+   </failure>
+  </testcase>
  </testsuite>
 </testsuites>

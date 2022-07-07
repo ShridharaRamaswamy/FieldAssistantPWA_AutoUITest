@@ -13,7 +13,7 @@ let loginPage = function () {
 
         await browser.wait(EC.visibilityOf(username));
          username.sendKeys(userNameVar);
-       
+         await browser.wait(EC.visibilityOf(password));
          password.sendKeys(passwordVar);
          await browser.sleep(2000);
         await loginButton.click();

@@ -207,7 +207,6 @@ describe("PWA, Wrok Procedure Module test cases", () => {
 
      // await logoutPage.confirmLogout();
 
-
     // }),
      it("Open work procedure and trend from work item", async () => {
 

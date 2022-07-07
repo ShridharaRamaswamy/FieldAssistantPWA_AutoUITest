@@ -14,13 +14,14 @@ exports.config = {
   // Capabilities to be passed to the webdriver instance.
   capabilities: {
     'browserName': 'chrome',
-    //  chromeOptions: {
-    //    args: ["--headless", "--disable-gpu", "--window-size=800x600"]
-    // }, 
+     chromeOptions: {
+      'args': ['incognito']
+    }, 
     // 'shardTestFiles': true,
-    'marionette': true,
+      // 'marionette': true,
     'acceptInsecureCerts': true,
     'maxInstances': 1
+    
   },
 
   // Framework to use. Jasmine is recommended.
@@ -42,15 +43,15 @@ exports.config = {
   suites:
   {
     testsuite: [
-      'C:/Users/Administrator/Documents/FieldAssistantPWA_AutoUITest/tests/deleteregisterclient/deleteregisterclient.js',
+      // 'C:/Users/Administrator/Documents/FieldAssistantPWA_AutoUITest/tests/deleteregisterclient/deleteregisterclient.js',
       '../tests/registerClient/register.js',
-      '../tests/login/login.js',
-      '../tests/sync/sync.js',
-      '../tests/route/route.js',
-      '../tests/device/device.js',
-      '../tests/workProcedure/workProcedure.js',
-      '../tests/log/log.js',
-      '../tests/logout/logout.js'
+      // '../tests/login/login.js',
+      // '../tests/sync/sync.js'
+      // '../tests/route/route.js',
+      // '../tests/device/device.js',
+      // '../tests/workProcedure/workProcedure.js',
+      // '../tests/log/log.js',
+      // '../tests/logout/logout.js'
     ]
   },
 
