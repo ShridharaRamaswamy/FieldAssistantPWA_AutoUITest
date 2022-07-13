@@ -28,7 +28,7 @@ describe("PWA Login Module test cases - ", () => {
 
       await registerPage.registerClient(Date.now(),"1357");
 
-      await registerPage.okButtonClick();
+      await registerPage.okButtonClick();   
 
       browser.waitForAngularEnabled(false);
 
@@ -47,7 +47,7 @@ describe("PWA Login Module test cases - ", () => {
       console.log("Inside First it block");
 
       
-      await loginPage.login(env.config.userName, env.config.password, env.config.baseurl);
+      await loginPage.login(env.config.userName, env.config.password, env.config.login_url);
 
       await browser.wait(EC.visibilityOf(shiftLocator),80000)
 
@@ -58,7 +58,7 @@ describe("PWA Login Module test cases - ", () => {
 
          console.log("Inside Second block");
          
-         await loginPage.login(env.config.invalidUserName, env.config.invalidPassword, env.config.baseurl);
+         await loginPage.login(env.config.invalidUserName, env.config.invalidPassword, env.config.login_url);
          
 
          expect(browser.getCurrentUrl()).toEqual(env.config.login_url);
